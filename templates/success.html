@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block main %}
+    <table style="width:100%" class="table">
+        <thead>
+            <th scope="col">Name</th>
+            <th scope="col">House</th>
+            <th scope="col">Position</th>
+        </thead>
+
+        <tbody>
+            {% for person in registered %}
+                <tr scope="row">
+                    <td>{{person[0]}}</td>
+                    <td>{{person[1]}}</td>
+                    <td>{{person[2]}}</td>
+
+                </tr>
+            {% endfor %}
+
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+{% endblock %}
